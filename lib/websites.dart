@@ -128,10 +128,7 @@ class _WebsitesState extends State<Websites> {
                       fontStyle: FontStyle.normal,
                       fontFamily: 'Ubuntu',
                       fontSize: 20)),
-              const Divider(
-                height: 20,
-                color: Colors.transparent,
-              ),
+              const Divider(height: 20, color: Colors.transparent),
               Link(
                 uri: Uri.parse(
                     'https://sites.google.com/view/namankhuranasamplewebsite/home'),

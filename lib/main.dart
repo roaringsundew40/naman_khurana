@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:naman_khurana/websites.dart';
-import 'aboutme.dart';
+import 'package:naman_khurana/aboutme.dart';
+import 'package:naman_khurana/animations.dart';
+import 'package:naman_khurana/phred.dart';
 //import 'websites.dart';
 //simport 'package:google_fonts/google_fonts.dart';
 
@@ -31,6 +33,8 @@ class _HomePageState extends State<HomePage> {
   final _widgets = [
     const AboutMe(),
     const Websites(),
+    const Animations(),
+    const PHRED(),
   ];
 
   void _onItemTapped(int index) {
@@ -45,7 +49,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Naman Khurana'),
         centerTitle: true,
-        backgroundColor: const Color.fromARGB(197, 36, 35, 36),
+        backgroundColor: Colors.amber[800],
       ),
       body: _widgets[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
@@ -66,10 +70,6 @@ class _HomePageState extends State<HomePage> {
             BottomNavigationBarItem(
               icon: Icon(Icons.settings),
               label: 'PHRED',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.videogame_asset),
-              label: 'Game Over',
             ),
           ],
           currentIndex: _selectedIndex,

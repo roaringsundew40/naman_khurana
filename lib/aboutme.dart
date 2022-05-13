@@ -25,7 +25,7 @@ class _AboutMeState extends State<AboutMe> {
                       color: Color.fromARGB(255, 0, 0, 0),
                       fontWeight: FontWeight.w600,
                       fontStyle: FontStyle.normal,
-                      fontFamily: 'Ubuntu',
+                      fontFamily: 'Koulen',
                       fontSize: 40)),
               const Divider(
                 height: 50,

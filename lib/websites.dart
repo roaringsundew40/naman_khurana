@@ -1,7 +1,5 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:linkify/linkify.dart';
+import 'package:url_launcher/link.dart';
 
 class Websites extends StatefulWidget {
   const Websites({Key? key}) : super(key: key);
@@ -68,9 +66,10 @@ class _WebsitesState extends State<Websites> {
                 color: Colors.transparent,
               ),
               Link(
-                  uri: Uri.parse('https://google.com'),
-                  builder: (context, followLink) => ElevatedButton(
-                      onPressed: followLink, child: const Text('Open Link'))),
+                uri: Uri.parse('https://google.com'),
+                builder: (context, followLink) => ElevatedButton(
+                    onPressed: followLink, child: const Text('Open Link')),
+              ),
               const Divider(
                 height: 50,
                 color: Colors.transparent,

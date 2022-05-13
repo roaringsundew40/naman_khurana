@@ -66,9 +66,11 @@ class _WebsitesState extends State<Websites> {
                 color: Colors.transparent,
               ),
               Link(
-                uri: Uri.parse('https://google.com'),
+                uri: Uri.parse(
+                    'https://sites.google.com/view/schampstudio/home'),
                 builder: (context, followLink) => ElevatedButton(
-                    onPressed: followLink, child: const Text('Open Link')),
+                    onPressed: followLink,
+                    child: const Text('Check it out here.')),
               ),
               const Divider(
                 height: 50,
@@ -94,6 +96,16 @@ class _WebsitesState extends State<Websites> {
                       fontFamily: 'Ubuntu',
                       fontSize: 20)),
               const Divider(
+                height: 20,
+                color: Colors.transparent,
+              ),
+              Link(
+                uri: Uri.parse('https://www.phred-robotics.com/'),
+                builder: (context, followLink) => ElevatedButton(
+                    onPressed: followLink,
+                    child: const Text('Check it out here.')),
+              ),
+              const Divider(
                 height: 50,
                 color: Colors.transparent,
               ),
@@ -117,17 +129,20 @@ class _WebsitesState extends State<Websites> {
                       fontFamily: 'Ubuntu',
                       fontSize: 20)),
               const Divider(
+                height: 20,
+                color: Colors.transparent,
+              ),
+              Link(
+                uri: Uri.parse(
+                    'https://sites.google.com/view/namankhuranasamplewebsite/home'),
+                builder: (context, followLink) => ElevatedButton(
+                    onPressed: followLink,
+                    child: const Text('Check it out here.')),
+              ),
+              const Divider(
                 height: 50,
                 color: Colors.transparent,
               ),
-              const Text(
-                  "Please Note: Links aren't currently working on this app, so to view the websites you will have to go to my personal website namankhurana.org and view the websites from there.  ",
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0),
-                      fontWeight: FontWeight.w600,
-                      fontStyle: FontStyle.normal,
-                      fontFamily: 'Ubuntu',
-                      fontSize: 15)),
             ],
           ),
         ),

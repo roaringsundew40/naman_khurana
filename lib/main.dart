@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
         body: _widgets[_selectedIndex],
         backgroundColor: const Color.fromARGB(255, 252, 126, 47),
         bottomNavigationBar: CurvedNavigationBar(
-            backgroundColor: const Color.fromARGB(134, 252, 126, 47),
+            backgroundColor: const Color.fromARGB(0, 252, 126, 47),
             color: Colors.white,
             items: <Widget>[
               SizedBox(

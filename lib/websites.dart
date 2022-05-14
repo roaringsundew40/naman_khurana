@@ -70,7 +70,15 @@ class _WebsitesState extends State<Websites> {
                     'https://sites.google.com/view/schampstudio/home'),
                 builder: (context, followLink) => ElevatedButton(
                     onPressed: followLink,
-                    child: const Text('Check it out here.')),
+                    child: const Text(
+                      'Check it out here.',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      primary: const Color.fromARGB(255, 12, 242, 250),
+                    )),
               ),
               const Divider(
                 height: 50,
@@ -103,7 +111,15 @@ class _WebsitesState extends State<Websites> {
                 uri: Uri.parse('https://www.phred-robotics.com/'),
                 builder: (context, followLink) => ElevatedButton(
                     onPressed: followLink,
-                    child: const Text('Check it out here.')),
+                    child: const Text(
+                      'Check it out here.',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      primary: const Color.fromARGB(255, 12, 242, 250),
+                    )),
               ),
               const Divider(
                 height: 50,
@@ -134,7 +150,15 @@ class _WebsitesState extends State<Websites> {
                     'https://sites.google.com/view/namankhuranasamplewebsite/home'),
                 builder: (context, followLink) => ElevatedButton(
                     onPressed: followLink,
-                    child: const Text('Check it out here.')),
+                    child: const Text(
+                      'Check it out here.',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      primary: const Color.fromARGB(255, 12, 242, 250),
+                    )),
               ),
               const Divider(
                 height: 50,

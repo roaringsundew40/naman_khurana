@@ -44,11 +44,15 @@ dev_dependencies:
 
 flutter_native_splash:
   color: "#ffffff"
-  image: images/splash-final.png
+  image: images/NKLogo.png
 
 assets:
   - fonts/
   - images/
+
+flutter_icons:
+  ios: true
+  image_path: "images/NKLogo.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

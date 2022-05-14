@@ -68,7 +68,15 @@ class _AnimationsState extends State<Animations> {
                 uri: Uri.parse('https://www.youtube.com/watch?v=Zu5q0vFxgbg'),
                 builder: (context, followLink) => ElevatedButton(
                     onPressed: followLink,
-                    child: const Text('Check it out here.')),
+                    child: const Text(
+                      'Check it out here.',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      primary: const Color.fromARGB(255, 12, 242, 250),
+                    )),
               ),
               const Divider(
                 height: 50,
@@ -101,7 +109,15 @@ class _AnimationsState extends State<Animations> {
                 uri: Uri.parse('https://www.youtube.com/watch?v=xA7ACNoyihU'),
                 builder: (context, followLink) => ElevatedButton(
                     onPressed: followLink,
-                    child: const Text('Check it out here.')),
+                    child: const Text(
+                      'Check it out here.',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      primary: const Color.fromARGB(255, 12, 242, 250),
+                    )),
               ),
               const Divider(
                 height: 50,
@@ -139,7 +155,15 @@ class _AnimationsState extends State<Animations> {
                 uri: Uri.parse('https://www.youtube.com/watch?v=oxePze9rZuw'),
                 builder: (context, followLink) => ElevatedButton(
                     onPressed: followLink,
-                    child: const Text('Check it out here.')),
+                    child: const Text(
+                      'Check it out here.',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      primary: const Color.fromARGB(255, 12, 242, 250),
+                    )),
               ),
               const Divider(
                 height: 50,
@@ -172,7 +196,15 @@ class _AnimationsState extends State<Animations> {
                 uri: Uri.parse('https://www.youtube.com/watch?v=tbe52pNuX08'),
                 builder: (context, followLink) => ElevatedButton(
                     onPressed: followLink,
-                    child: const Text('Check it out here.')),
+                    child: const Text(
+                      'Check it out here.',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      primary: const Color.fromARGB(255, 12, 242, 250),
+                    )),
               ),
               const Divider(
                 height: 50,

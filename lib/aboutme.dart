@@ -32,7 +32,7 @@ class _AboutMeState extends State<AboutMe> {
                 color: Colors.transparent,
               ),
               const Text(
-                  "My Name is Naman Khurana. I am in 7th Grade at Franklin School K-8 in Corvallis, OR. I like to play video games and make animations. I go by the name of Naman Studios in the Blender Community. I know Python, Java, HTML/CSS, and a bit of C#. I also know how to use Unity, Blender, and some Unreal Engine. I currently make Blender AnimationsI also make websites for local businesses in my town.",
+                  "My Name is Naman Khurana. I am in 7th Grade at Franklin School K-8 in Corvallis, OR. I like to play video games and make animations. I go by the name of Naman Studios in the Blender Community. I know Python, Java, HTML/CSS, and a bit of C#. I also know how to use Unity, Blender, and some Unreal Engine. I currently make Blender Animations. I also make websites for local businesses in my town.",
                   style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
                       fontWeight: FontWeight.w600,
@@ -59,7 +59,15 @@ class _AboutMeState extends State<AboutMe> {
                 uri: Uri.parse('https://www.namankhurana.org/'),
                 builder: (context, followLink) => ElevatedButton(
                     onPressed: followLink,
-                    child: const Text('Check out my website here')),
+                    child: const Text(
+                      'Check out my website here',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      primary: const Color.fromARGB(255, 12, 242, 250),
+                    )),
               ),
             ],
           ),

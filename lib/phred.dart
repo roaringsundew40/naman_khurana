@@ -49,7 +49,15 @@ class _PHREDState extends State<PHRED> {
                 uri: Uri.parse('https://phred-robotics.com/'),
                 builder: (context, followLink) => ElevatedButton(
                     onPressed: followLink,
-                    child: const Text('Check out our website here')),
+                    child: const Text(
+                      'Check out our website here.',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      primary: const Color.fromARGB(255, 12, 242, 250),
+                    )),
               ),
             ],
           ),

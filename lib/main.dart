@@ -3,8 +3,7 @@ import 'package:naman_khurana/websites.dart';
 import 'package:naman_khurana/aboutme.dart';
 import 'package:naman_khurana/animations.dart';
 import 'package:naman_khurana/phred.dart';
-//import 'websites.dart';
-//simport 'package:google_fonts/google_fonts.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,35 +45,69 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Naman Khurana'),
-        centerTitle: true,
-        backgroundColor: Colors.amber[800],
-      ),
-      body: _widgets[_selectedIndex],
-      bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(Icons.info),
-              label: 'About me',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.web_asset_rounded),
-              label: 'Websites',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.animation),
-              label: 'Animations',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.settings),
-              label: 'PHRED',
-            ),
-          ],
-          currentIndex: _selectedIndex,
-          selectedItemColor: Colors.amber[800],
-          onTap: _onItemTapped),
-    );
+        appBar: AppBar(
+          title: const Text(
+            'Naman Khurana',
+            style: TextStyle(color: Colors.black),
+          ),
+          centerTitle: true,
+          backgroundColor: const Color.fromARGB(255, 12, 242, 250),
+        ),
+        body: _widgets[_selectedIndex],
+        backgroundColor: const Color.fromARGB(255, 252, 126, 47),
+        bottomNavigationBar: CurvedNavigationBar(
+            backgroundColor: const Color.fromARGB(134, 252, 126, 47),
+            color: Colors.white,
+            items: <Widget>[
+              SizedBox(
+                height: 50,
+                child: Column(
+                  children: const [
+                    Icon(Icons.info, size: 30),
+                    Text(
+                      "About Me",
+                      style: TextStyle(fontSize: 12),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 50,
+                child: Column(
+                  children: const [
+                    Icon(Icons.web_rounded, size: 30),
+                    Text(
+                      "Websites",
+                      style: TextStyle(fontSize: 12),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 50,
+                child: Column(
+                  children: const [
+                    Icon(Icons.play_arrow_rounded, size: 30),
+                    Text(
+                      "Animations",
+                      style: TextStyle(fontSize: 12),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 50,
+                child: Column(
+                  children: const [
+                    Icon(Icons.settings, size: 30),
+                    Text(
+                      "PHRED",
+                      style: TextStyle(fontSize: 12),
+                    )
+                  ],
+                ),
+              ),
+            ],
+            onTap: _onItemTapped));
   }
 }

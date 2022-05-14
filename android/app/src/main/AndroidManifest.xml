@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.namankhurana.namankhurana.naman_khurana">
    <application
-        android:label="naman_khurana"
+        android:label="Naman Khurana"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
